@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/change.js"></script>
+    <script src="js/tlgd.js"></script>
+    <script src="blocker.js"></script>
+
+</head>
+<script>
+	function audioPlay() {
+			var audio = document.getElementById("audio");
+			audio.volume = 0.5;
+            audio.currentTime = 0;
+			audio.play();
+	}
+</script>
+
+<input type="checkbox" autocomplete="off" id="overlay-toggle">
+<div class="overlay fullscreen">
+	<label for="overlay-toggle" onclick="audioPlay(); ">
+        <center>
+		<span class="overlayno-hover hover" style="font-family: monospace; font-size: 0.8em;">drogas</span>
+	</label>
+</div>
+<body>
+    <div id="video" class="banner">
+        <video autoplay loop muted>
+            <source src="embalo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+
+
+
+        <audio loop preload="auto" id="audio">
+            <source src="audios/tlgd.mp3" type="audio/mp3">
+        </audio>
+
+
+    <div class="all">
+        <div class="discord-profile">
+            <div class="profile-cover"></div>
+            <div class="profile animate__animated animate__fadeInUp animate__fast">
+
+                <div class="pfp">
+                    <img class="profile-pic" data-user-id="1198080282453086328" src="">
+                    <span class="status" data-user-id="1198080282453086328"></span>  
+
+                </div>
+
+                <div class="username" data-user-id="1198080282453086328"></div>
+                <div class="nickname" data-user-id="1198080282453086328"></div>
+                <div class="badges">
+                    <div class="badge" style="background-image: url('badges/nitro.gif');"data-tooltip=""></div>
+                    <div class="badge" style="background-image: url('https://raw.githubusercontent.com/mezotv/discord-badges/274060e9cbb14eb6b9280e052664eb515846c9af/assets/boosts/discordboost2.svg');"data-tooltip=""></div>
+                    <div class="badge" style="background-image: url('badges/1327019719017889823.png');"data-tooltip=""></div>
+                </div>
+
+                <div class="spotify-info" data-user-id="1198080282453086328">
+                    <p class="ouvindo">
+                        Ouvindo 
+                        <img src="https://cdn.discordapp.com/emojis/1223676069492822168.webp?size=96&quality=lossless" alt="Spotify Icon" class="spotify-icon">
+                    
+                    </p>
+                    <div class="spotify-details">
+                        <img src="https://i.pinimg.com/564x/bb/ab/df/bbabdf10acc7bb4c0eb50460d3ceec59.jpg" alt="Spotify Song Image" class="spotify-image" data-user-id="1198080282453086328">
+                        <div class="spotify-text">
+                            <div class="spotify-song" data-user-id="1198080282453086328">null</div>
+                            <div class="spotify-artist" data-user-id="1198080282453086328">null</div>
+                        </div>
+                    </div>
+                    <div class="spotify-bar">
+                        <div class="spotify-progress" data-user-id="1198080282453086328" style="width: 0%;"></div>
+                    </div>
+                    <div class="spotify-time">
+                        <span class="spotify-time-start" data-user-id="1198080282453086328">null</span>
+                        <span class="spotify-time-end" data-user-id="1198080282453086328">null</span>
+                    </div>
+                </div>
+                <div class="nick subnick"> </div>
+
+                <div class="sociais">
+                    <a href="https://www.instagram.com/ogthheu/" target="_blank">
+                        <img src="badges/Instagram_icon.png" width="20" height="25" alt="Instagram">
+
+                        <a href="https://www.tiktok.com/@aquinowkj" target="_blank">
+                            <img src="badges/tiktok.png" width="30" height="25" alt="tiktok">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("click", function () {
+                var audio = document.getElementById("audio");
+                if (audio.paused) {
+                    audio.play();
+                }
+            });
+        </script>
+        
+
+</html>
